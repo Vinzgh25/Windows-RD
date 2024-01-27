@@ -63,7 +63,7 @@ jobs:
         overwrite: true
         body: "This is my release"
         
-    - name: Upload file to release
+    - name: Upload file to release2
       uses: svenstaro/upload-release-action@v2
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
@@ -71,7 +71,7 @@ jobs:
         asset_name: 2.zip
         tag: ${{ github.ref }}
         overwrite: true
-        body: "This is my release"
+        body: "This is my release2"
         
     - name: Successful implementation! You can close the tab now.
       run: cmd /c loop.bat
