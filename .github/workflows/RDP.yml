@@ -56,8 +56,8 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
-        name: My artifact
-        path: C:\Users\administrator\Desktop\1.zip
+        name: 1.exe
+        path: C:\Users\administrator\Desktop\1.exe
         
     - name: Successful implementation! You can close the tab now.
       run: cmd /c loop.bat
