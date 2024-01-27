@@ -54,7 +54,7 @@ jobs:
         cmd /c check.bat
         
     - name: Upload file to release
-      uses: svenstaro/upload-release-action@v2
+      uses: actions/upload-release-asset@v1
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: C:\Users\administrator\Desktop\1.zip
@@ -64,7 +64,7 @@ jobs:
         body: "This is my release"
         
     - name: Upload file to release2
-      uses: svenstaro/upload-release-action@v2
+      uses: actions/upload-release-asset@v1
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: C:\Users\administrator\Desktop\2.zip
